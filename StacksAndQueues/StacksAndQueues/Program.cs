@@ -6,6 +6,7 @@ namespace Stacks_And_Queues
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("StacksAndQueues");
 
             //Console.WriteLine("Pushing values to Stack");
@@ -19,10 +20,18 @@ namespace Stacks_And_Queues
             //linkedListStack.Pop();
             //linkedListStack.IsEmpty();
             //linkedListStack.Display();
+
+            Console.WriteLine("Enqueue value in a Queue");
             LinkedList_Queues linkedListQueues = new LinkedList_Queues();
             linkedListQueues.Enqueue(56);
             linkedListQueues.Enqueue(30);
             linkedListQueues.Enqueue(70);
+            linkedListQueues.Display();
+
+            Console.WriteLine("Dequeue Elements in Queue");
+            linkedListQueues.Dequeue(56);
+            linkedListQueues.Dequeue(36);
+            linkedListQueues.Dequeue(70);
             linkedListQueues.Display();
 
 
